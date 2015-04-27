@@ -13,6 +13,10 @@ describe("Sacar dinheiro", function() {
         'get_padrao_letra', 'get_verificar_letras',
         'sacar'
       ]);
+      
+    operacao.get_valor_a_ser_sacado.and.callFake(function(){
+      return 10;
+    });
     */
 
     spyOn(operacao, "get_saldo").and.callFake(function(){
